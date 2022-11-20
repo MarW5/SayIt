@@ -1,0 +1,12 @@
+{
+    "sourceType": "unambigous",
+    "presets": ["@babel/preset-env", "@babel/reset-react"],
+    "plugins": [
+        [
+            "@babel/plugin-transform-runtime",
+            {
+                "regenerator": true
+            }
+        ]
+    ]
+}

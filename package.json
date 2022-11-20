@@ -1,0 +1,43 @@
+{
+  "name": "SayIt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js",
+    "dev:js": "node ./node_modules/webpack/bin/webpack.js --config ./webpack.config.js  --mode=development --devtool source-map",
+    "dev:style": "node ./node_modules/webpack/bin/webpack.js --config ./config/webpack.style.js --mode=development --devtool source-map",
+    "dev": "npm run dev:js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarW5/SayIt.git"
+  },
+  "author": "Marta Wiese",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarW5/SayIt/issues"
+  },
+  "homepage": "https://github.com/MarW5/SayIt#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "extract-loader": "^5.1.0",
+    "file-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^2.6.0",
+    "postcss": "^8.4.13",
+    "postcss-loader": "^6.2.1",
+    "sass": "^1.51.0",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.7",
+    "babel-loader": "^9.1.0",
+    "postcss-cli": "^9.1.0",
+    "terser-webpack-plugin": "^5.3.6",
+    "webpack-manifest-plugin": "^5.0.0"
+  }
+}
